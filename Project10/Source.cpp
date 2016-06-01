@@ -6,14 +6,14 @@ using namespace std;
 
 int main()
 {
-	Queue<int> intStack;
+	Queue<int> intQueue;
 	cout << "Cargando bateria...\n";
 	for (int i = 0; i < 100; i++) // Charge battery
-		intStack.push(i);
+		intQueue.push(i);
 	cin.get();
-	while (!intStack.empty())
-		cout << "Nivel de Bateria: " << intStack.front()->getData() << endl;
-	cout << "La carga residual es de: " << intStack.size() << endl;
+	while (!intQueue.empty())
+		cout << "Nivel de Bateria: " << intQueue.front()->getData() << endl;
+	cout << "La carga residual es de: " << intQueue.size() << endl;
 	cin.get();
 	return 0;
 }
